@@ -1,5 +1,6 @@
 .personality__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -8,6 +9,7 @@
   line-height: calc(16 / 14);
   text-transform: uppercase;
   color: var(--second-text-color);
+  text-align: center;
 }
 
 .per-title--resizing {
@@ -15,7 +17,13 @@
 }
 
 .personality__item {
-  max-width: 270px;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .personality__icon {

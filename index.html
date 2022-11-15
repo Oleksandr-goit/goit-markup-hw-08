@@ -24,15 +24,21 @@
   </head>
   <body>
     <!-- header -->
-    <!-- <header class="header border">
+    <header class="header border">
       <div class="container header__container">
+        <a
+          class="logo header__logo logo--dark link"
+          href="./index.html"
+          lang="en"
+          ><span class="logo__accent">Web</span>Studio</a
+        >
+        <button type="button" class="header__mob-menu-open" data-menu-open>
+          <svg class="header__btn-icon" width="40" height="40">
+            <use href="./img/symbol-defs1.svg#icon-open-menu"></use>
+          </svg>
+        </button>
+
         <nav class="navigation">
-          <a
-            class="logo navigation__logo logo--dark link"
-            href="./index.html"
-            lang="en"
-            ><span class="logo__accent">Web</span>Studio</a
-          >
           <ul class="menu list">
             <li class="menu__item">
               <a class="menu__link link current" href="./index.html">Студія</a>
@@ -64,18 +70,20 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
     <!-- main -->
     <main>
-      <!-- <section class="hero section">
+      <!-- hero section -->
+      <section class="hero section">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button class="hero__button" data-modal-open type="button">
             Замовити послугу
           </button>
         </div>
-      </section> -->
-      <!-- <section class="personality section">
+      </section>
+      <!-- personality section -->
+      <section class="personality section">
         <div class="container">
           <h2 class="personality__title visually-hidden">Особистості</h2>
           <ul class="personality__list list">
@@ -134,58 +142,139 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="product section">
+      </section>
+      <!-- product section -->
+      <section class="product section">
         <div class="container">
           <h2 class="product-title pro-title--resizing">Чим ми займаємося</h2>
           <ul class="product__list list">
             <li class="product__item">
               <div class="product__wrap">
-                <img
-                  src="./img/about-img1.jpg"
-                  alt="Робочий процес"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./img/product/product-1/product 1-370.webp 370w,
+                ./img/product/product-1/product 1-740.webp 740w"
+                    type="image/webp"
+                  />
+                  <img
+                    class="product__img"
+                    srcset="./img/product/product-1/product 1-370.jpg.jpg 370,
+                ./img/product/product-1/product 1-740.jpg.jpg 740w
+                "
+                    src="./img/product/product-1/product 1-370.jpg.jpg"
+                    alt="Декстопні додатки"
+                    sizes="33vw"
+                  />
+                </picture>
                 <p class="product__text">Десктопні додатки</p>
               </div>
             </li>
             <li class="product__item">
               <div class="product__wrap">
-                <img
-                  src="./img/about-img2.jpg"
-                  alt="Робочий процес"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./img/product/product-2/product 2-370.webp 370w,
+                ./img/product/product-2/product 2-740.webp 740w"
+                    type="image/webp"
+                  />
+                  <img
+                    class="product__img"
+                    srcset="./img/product/product-2/product 2-370.jpg.jpg 370w,
+                ./img/product/product-2/product 2-740.jpg.jpg 740w
+                "
+                    src="./img/product/product-2/product 2-370.jpg.jpg"
+                    alt="Мобільні додатки"
+                    sizes="33vw"
+                  />
+                </picture>
                 <p class="product__text">Мобыдьні додатки</p>
               </div>
             </li>
             <li class="product__item">
               <div class="product__wrap">
-                <img
-                  src="./img/about-img3.jpg"
-                  alt="Робочий процес"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./img/product/product-3/product 3-370.webp 370w,
+                ./img/product/product-3/product 3-740.webp 740w"
+                    type="image/webp"
+                  />
+                  <img
+                    class="product__img"
+                    srcset="./img/product/product-3/product 3-370.jpg.jpg 370w,
+                ./img/product/product-3/product 3-740.jpg.jpg 740w
+                "
+                    src="./img/product/product-3/product 3-370.jpg.jpg"
+                    alt="Дизайнерські рішення"
+                    sizes="33vw"
+                  />
+                </picture>
                 <p class="product__text">Дизайнерські рішення</p>
               </div>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
+      <!-- team section -->
       <section class="team section">
         <div class="container">
           <h2 class="team__title team-title--resizing">Наша команда</h2>
           <ul class="cards list">
             <li class="cards__item">
-              <img
-                src="./img/about-img4.jpg"
-                alt="Працівники"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team/first-person/desktop/igor-desk-270.webp 270w,
+                    ./img/team/first-person/desktop/igor-desk-540.webp 540w
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/team/first-person/desktop/igor-desk-270.jpg.jpg 270w,
+                    ./img/team/first-person/desktop/igor-desk-540.jpg.jpg 540w
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./img/team/first-person/tablet/igor-tab-354.webp 354w,
+                    ./img/team/first-person/tablet/igor-tab-708.webp 708w
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/team/first-person/tablet/igor-tab-354.jpg.jpg 354w,
+                    ./img/team/first-person/tablet/igor-tab-708.jpg.jpg 708w
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./img/team/first-person/mobile/igor-mob-450.webp 450w,
+                    ./img/team/first-person/mobile/igor-mob-900.webp 900w
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/team/first-person/mobile/igor-mob-450.jpg.jpg 450w,
+                    ./img/team/first-person/mobile/igor-mob-900.jpg.jpg 900w
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="cards__img"
+                  src="./img/team/first-person/mobile/igor-mob-450.jpg.jpg"
+                  alt="Дизайнер проектів"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+              </picture>
               <div class="cards-description">
                 <h3 class="cards__name cards-name--resizing">
                   Ігор Дем'яненко
@@ -226,12 +315,61 @@
               </div>
             </li>
             <li class="cards__item">
-              <img
-                src="./img/about-img5.jpg"
-                alt="Працівники"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team/second-person/desktop/olga-desk-270.webp 270w,
+                    ./img/team/second-person/desktop/olga-desk-540.webp 540w
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/team/second-person/desktop/olga-desk-270.jpg.jpg 270w,
+                    ./img/team/second-person/desktop/olga-desk-540.jpg.jpg 540w
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./img/team/second-person/tablet/olga-tab-354.webp 354w,
+                    ./img/team/second-person/tablet/olga-tab-708.webp 708w
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/team/second-person/tablet/olga-tab-354.jpg.jpg 354w,
+                    ./img/team/second-person/tablet/olga-tab-708.jpg.jpg 708w
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./img/team/second-person/mobile/olga-mob-450.webp 450w,
+                    ./img/team/second-person/mobile/olga-mob-900.webp 900w
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/team/second-person/mobile/olga-mob-450.jpg.jpg 450w,
+                    ./img/team/second-person/mobile/olga-mob-900.jpg.jpg 900w
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="cards__img"
+                  src="./img/team/second-person/mobile/olga-mob-450.jpg.jpg"
+                  alt="Фронтенд розробник"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+              </picture>
               <div class="cards-description">
                 <h3 class="cards__name cards-name--resizing">Ольга Рєпіна</h3>
                 <p class="cards__text cards-text--resizing" lang="en">
@@ -270,12 +408,61 @@
               </div>
             </li>
             <li class="cards__item">
-              <img
-                src="./img/about-img6.jpg"
-                alt="Працівники"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team/third-person/desktop/mykola-desk-270.webp 270w,
+                    ./img/team/third-person/desktop/mykola-desk-540.webp 540w
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/team/third-person/desktop/mykola-desk-270.jpg.jpg 270w,
+                    ./img/team/third-person/desktop/mykola-desk-540.jpg.jpg 540w
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./img/team/third-person/tablet/mykola-tab-354.webp 354w,
+                    ./img/team/third-person/tablet/mykola-tab-708.webp 708w
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/team/third-person/tablet/mykola-tab-354.jpg.jpg 354w,
+                    ./img/team/third-person/tablet/mykola-tab-708.jpg.jpg 708w
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./img/team/third-person/mobile/mykola-mob-450.webp 450w,
+                    ./img/team/third-person/mobile/mykola-mob-900.webp 900w
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/team/third-person/mobile/mykola-mob-450.jpg.jpg 450w,
+                    ./img/team/third-person/mobile/mykola-mob-900.jpg.jpg 900w
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="cards__img"
+                  src="./img/team/third-person/mobile/mykola-mob-450.jpg.jpg"
+                  alt="Маркетолог"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+              </picture>
               <div class="cards-description">
                 <h3 class="cards__name cards-name--resizing">Микола Тарасов</h3>
                 <p class="cards__text cards-text--resizing" lang="en">
@@ -314,12 +501,61 @@
               </div>
             </li>
             <li class="cards__item">
-              <img
-                src="./img/about-img7.jpg"
-                alt="Працівники"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team/fourth-person/desktop/mykhailo-desk-270.webp 270w,
+                    ./img/team/fourth-person/desktop/mykhailo-desk-540.webp 540w
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/team/fourth-person/desktop/mykhailo-desk-270.jpg.jpg 270w,
+                    ./img/team/fourth-person/desktop/mykhailo-desk-540.jpg.jpg 540w
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./img/team/fourth-person/tablet/mykhailo-tab-354.webp 354w,
+                    ./img/team/fourth-person/tablet/mykhailo-tab-708.webp 708w
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/team/fourth-person/tablet/mykhailo-tab-354.jpg.jpg 354w,
+                    ./img/team/fourth-person/tablet/mykhailo-tab-708.jpg.jpg 708w
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./img/team/fourth-person/mobile/mykhailo-mob-450.webp 450w,
+                    ./img/team/fourth-person/mobile/mykhailo-mob-900.webp 900w
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/team/fourth-person/mobile/mykhailo-mob-450.jpg.jpg 450w,
+                    ./img/team/fourth-person/mobile/mykhailo-mob-900.jpg.jpg 900w
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="cards__img"
+                  src="./img/team/fourth-person/mobile/mykhailo-mob-450.jpg.jpg"
+                  alt="Дизайнер UI"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+              </picture>
               <div class="cards-description">
                 <h3 class="cards__name cards-name--resizing">
                   Михайло Єрмаков
@@ -362,7 +598,8 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="customers section">
+      <!-- customers section -->
+      <section class="customers section">
         <div class="container">
           <h2 class="customers__title customers-title--resizing">
             Постійні клієнти
@@ -412,78 +649,81 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- <footer class="footer">
+    <!-- footer -->
+    <footer class="footer">
       <div class="container">
         <div class="footer__info">
-          <div class="footer__contacts">
-            <a
-              class="logo logo--light footer-logo--resizing link"
-              href="./index.html"
-              lang="en"
-              ><span class="logo__accent">Web</span>Studio</a
-            >
-            <address class="adress">
-              <ul class="adress__list list">
-                <li class="adress__item">
-                  <a
-                    class="adress__location link"
-                    href="https://goo.gl/maps/TeZ3aebKZKyq2pPy8"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >м. Київ, пр-т Лесі Українки, 26</a
-                  >
+          <div class="footer__contacts-wrap">
+            <div class="footer__contacts">
+              <a
+                class="logo logo--light footer-logo--resizing link"
+                href="./index.html"
+                lang="en"
+                ><span class="logo__accent">Web</span>Studio</a
+              >
+              <address class="adress">
+                <ul class="adress__list list">
+                  <li class="adress__item">
+                    <a
+                      class="adress__location link"
+                      href="https://goo.gl/maps/TeZ3aebKZKyq2pPy8"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >м. Київ, пр-т Лесі Українки, 26</a
+                    >
+                  </li>
+                  <li class="adress__item mail">
+                    <a
+                      class="adress__contact link"
+                      href="mailto:info@devstudio.com"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li class="adress__item">
+                    <a class="adress__contact link" href="tel:+380961111111"
+                      >+38 096 111 11 11</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="social-company">
+              <h2 class="social-company__title company-title--resizing">
+                приєднуйтесь
+              </h2>
+              <ul class="social-networks list">
+                <li class="social-networks__item">
+                  <a class="social-networks__link" href="">
+                    <svg class="social-networks__icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="adress__item mail">
-                  <a
-                    class="adress__contact link"
-                    href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  >
+                <li class="social-networks__item">
+                  <a class="social-networks__link" href="">
+                    <svg class="social-networks__icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="adress__item">
-                  <a class="adress__contact link" href="tel:+380961111111"
-                    >+38 096 111 11 11</a
-                  >
+                <li class="social-networks__item">
+                  <a class="social-networks__link" href="">
+                    <svg class="social-networks__icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-networks__item">
+                  <a class="social-networks__link" href="">
+                    <svg class="social-networks__icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
-            </address>
-          </div>
-          <div class="social-company">
-            <h2 class="social-company__title company-title--resizing">
-              приєднуйтесь
-            </h2>
-            <ul class="social-networks list">
-              <li class="social-networks__item">
-                <a class="social-networks__link" href="">
-                  <svg class="social-networks__icon" width="20" height="20">
-                    <use href="./img/symbol-defs.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-networks__item">
-                <a class="social-networks__link" href="">
-                  <svg class="social-networks__icon" width="20" height="20">
-                    <use href="./img/symbol-defs.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-networks__item">
-                <a class="social-networks__link" href="">
-                  <svg class="social-networks__icon" width="20" height="20">
-                    <use href="./img/symbol-defs.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-networks__item">
-                <a class="social-networks__link" href="">
-                  <svg class="social-networks__icon" width="20" height="20">
-                    <use href="./img/symbol-defs.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+            </div>
           </div>
           <div class="fotter-input-wrap">
             <form class="online__form">
@@ -506,7 +746,8 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
+    <!-- modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-button" data-modal-close>
@@ -514,8 +755,9 @@
             <use href="./img/symbol-defs1.svg#icon-Vector"></use>
           </svg>
         </button>
+
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
-        <form class="form">
+        <form>
           <label for="user-name" class="modal-lable">Ім'я</label>
           <div class="modal-input-wrap">
             <input
@@ -528,6 +770,7 @@
               <use href="./img/symbol-defs1.svg#icon-person-black-1"></use>
             </svg>
           </div>
+
           <label for="user-tel" class="modal-lable">Телефон</label>
           <div class="modal-input-wrap">
             <input
@@ -545,8 +788,8 @@
             <input
               type="email"
               class="modal-input"
-              name="user-email"
-              id="user-tel"
+              name="user-tel"
+              id="user-email"
             />
             <svg class="modal-input-icon" width="18" height="18">
               <use href="./img/symbol-defs1.svg#icon-email-black-1"></use>
@@ -573,14 +816,96 @@
                   <use href="./img/symbol-defs1.svg#icon-Vector-2"></use>
                 </svg>
               </span>
-              Погоджуюся з розсилкою та приймаю&nbsp;
-              <a class="policy" href="#"> Умови договору</a>
+              <p class="privacy-text">
+                Погоджуюся з розсилкою та приймаю&nbsp;
+                <a class="policy" href="#"> Умови договору</a>
+              </p>
             </label>
           </div>
           <button type="submit" class="modal-btn">Відправити</button>
         </form>
       </div>
     </div>
-    <script src="./modal.js"></script>
+    <!-- mobile menu -->
+    <div class="mobile-menu is is-hidden" data-menu>
+      <div class="mobile-top">
+        <button type="button" class="mobile-menu__close">
+          <svg class="mobile-menu__icon" width="40" height="40" data-menu-close>
+            <use href="./images/symbol-defs.svg#close-menu"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu__list list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link accent link" href="./index.html"
+              >Студія</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link" href="./portfolio.html"
+              >Портфоліо</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link" href="">Контакти</a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-bottom">
+        <ul class="mobile-contact list">
+          <li class="mobile-contact__item">
+            <a
+              class="mobile-contact__link link"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="mobile-contact__item">
+            <a class="mobile-contact__link link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-social list">
+          <li class="mobile-social__item">
+            <a
+              class="mobile-social__link link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              >Instagram</a
+            >
+          </li>
+          <li class="mobile-social__item">
+            <a
+              class="mobile-social__link link"
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              >Twitter</a
+            >
+          </li>
+          <li class="mobile-social__item">
+            <a
+              class="mobile-social__link link"
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              >Facebook</a
+            >
+          </li>
+          <li class="mobile-social__item">
+            <a
+              class="mobile-social__link link"
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
