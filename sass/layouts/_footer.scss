@@ -12,6 +12,26 @@
     align-items: baseline;
     justify-content: space-between;
   }
+
+  .footer__contact-wrap {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      margin-bottom: 60px;
+      width: 100%;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+      display: flex;
+      width: auto;
+    }
+    .footer__contacts {
+      @media screen and (min-width: 768px) {
+        width: 100%;
+      }
+    }
+  }
 }
 .logo--light {
   color: var(--third-text-color);
@@ -34,9 +54,18 @@
 .adress__location {
   display: flex;
   margin-bottom: 8px;
-  justify-content: center;
+  justify-content: start;
+
+  @media screen and (min-width: 320px) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
   @media screen and (min-width: 1200px) {
     margin-bottom: 9px;
+    justify-content: start;
   }
 
   font-family: inherit;
@@ -77,6 +106,7 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
     margin-left: 165px;
+    width: 100%;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
@@ -130,8 +160,11 @@
   text-transform: uppercase;
 
   color: var(--third-text-color);
-  @media screen and (min-widht: 1200px) {
+  @media screen and (min-width: 1200px) {
     text-align: left;
+  }
+  @media screen and (min-width: 768px) {
+    text-align: center;
   }
 }
 
@@ -181,7 +214,7 @@
 .online-input--resizing {
   // margin-right: 12px;
   margin-bottom: 20px;
-  @media screen and (min-widht: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 0;
     margin-right: 12px;
   }
@@ -217,20 +250,4 @@
 
 .online__icon {
   fill: var(--third-text-color);
-}
-
-.footer__contact-wrap {
-  @media screen and (min-widht: 768px) {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    margin-bottom: 60px;
-  }
-
-  @media screen and (min-widht: 1200px) {
-    // display: flex;
-    // justify-content: center;
-    // align-items: baseline;
-    margin-bottom: 0;
-  }
 }
