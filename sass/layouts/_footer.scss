@@ -226,7 +226,11 @@
     align-items: baseline;
     margin-bottom: 60px;
   }
+
   @media screen and (min-widht: 1200px) {
+    // display: flex;
+    // justify-content: center;
+    // align-items: baseline;
     margin-bottom: 0;
   }
 }

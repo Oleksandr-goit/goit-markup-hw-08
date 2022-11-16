@@ -11,7 +11,8 @@
 
 .menu {
   display: none;
-  @media screen and (min-width: 768) {
+
+  @media screen and (min-width: 768px) {
     display: flex;
     gap: 50px;
   }
@@ -25,10 +26,15 @@
     flex-wrap: wrap;
     gap: 10px;
     margin-left: 96px;
+    padding-top: 20px;
+    margin-left: auto;
+    width: 150px;
   }
   @media screen and (min-width: 1200px) {
     margin-left: auto;
     gap: 50px;
+    padding-top: 0;
+    width: auto;
   }
 }
 
@@ -136,9 +142,6 @@
 }
 
 .contact__item:first-child > .contact__link {
-  @media screen and (min-width: 768px) {
-    padding-top: 20px;
-  }
   @media screen and (min-width: 1200px) {
     padding-top: 32px;
     padding-bottom: 32px;
